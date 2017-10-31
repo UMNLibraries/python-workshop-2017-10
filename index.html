@@ -86,7 +86,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 				<section>
           <h2>Python 2 vs. 3</h2>  
-          <p>Python 2 was released in 2000, and will fall out of support in 2020. Python 3 was released in 2008, and is the future of the language. Use Python 3, unless you are using already-existing code in Python 2, or need a package (library) that does not support Python 3, a rare situation. 
+          <p>Python 2 was released in 2000, and will fall out of support in 2020. Python 3 was released in 2008, and is the future of the language. Use Python 3, unless you are using already-existing code in Python 2, or need a package (library) that does not support Python 3, a rare situation.</p> 
 				</section>
 
 				<section>
@@ -114,6 +114,25 @@ print('Hello, {}!'.format(to))
 type('World')
 type(to)
 type(print)
+					</code></pre>
+				</section>
+
+				<section>
+          <h2>Reflection</h2>  
+          <p>"In computer science, reflection is the ability of a computer program to examine, introspect, and modify its own structure and behavior at runtime."</p> 
+          <p>-- <a href="https://en.wikipedia.org/wiki/Reflection_(computer_programming)">en.wikipedia.org/wiki/Reflection_(computer_programming)</a>
+				</section>
+
+				<section>
+          <h2>Introspection</h2>  
+          <p>The <strong>type</strong> function is an example of introspection. Some others:</p> 
+					<pre class="fragment"><code data-noescape class="python">
+dir('World')           1
+callable('World')           1
+callable(print)           1
+from apihelper import info
+import __builtin__
+info(__builtin__, 20)
 					</code></pre>
 				</section>
 
